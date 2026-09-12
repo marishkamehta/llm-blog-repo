@@ -1,0 +1,21 @@
+{
+  "output_sha256": {
+    "fastchat-position-pairs.csv": "0d7a0c80b0c19fc0764acccf7e5589fd42c29e2aca8c6b1f32dea1e0abdea86b",
+    "fastchat-repetition-cells.csv": "347408dd9ecbe308864ec2d760d5ad95f4321629f5220ff641eaab97748ecb45",
+    "fastchat-summary-by-prompt.csv": "a7e4a52810cbaeadf853363ba2f82ff2af418f6f004147618043e4cd37e76a74",
+    "parsed-trials.csv": "f3739a6837f82c00793ac9ac69f71741f673a3dd8cea5d6983f0e7c4183cbaba",
+    "position-pairs.csv": "0d7a0c80b0c19fc0764acccf7e5589fd42c29e2aca8c6b1f32dea1e0abdea86b",
+    "repetition-cells.csv": "347408dd9ecbe308864ec2d760d5ad95f4321629f5220ff641eaab97748ecb45",
+    "summary-by-prompt.csv": "a7e4a52810cbaeadf853363ba2f82ff2af418f6f004147618043e4cd37e76a74"
+  },
+  "parsed_trial_count": 432,
+  "parser_rules": {
+    "primary": "exactly one case-sensitive [[A]] or [[B]] token anywhere; reject missing, tie, or multiple tokens",
+    "sensitivity_fastchat_literal": "case-sensitive containment in [[A]], [[B]], [[C]] priority order"
+  },
+  "position_pair_count": 72,
+  "raw_record_count": 432,
+  "repetition_cell_count": 144,
+  "schedule_sha256": "1236b024ff398e25dc86abcb9244e0af5d4267e6d283c927c6f87c3a0703df49",
+  "schema_version": 2
+}

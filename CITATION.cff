@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite the software release."
+title: "LLM Behavioral Pipeline Template"
+type: software
+authors:
+  - family-names: "Dennis"
+    given-names: "Don K."
+  - family-names: "Mehta"
+    given-names: "Marishka M."
+    orcid: "https://orcid.org/0000-0001-5105-6723"
+version: 0.1.0
+license: MIT
+abstract: >-
+  A backend-neutral template for running language models as participants in
+  behavioral experiments, with model registration, metadata capture, smoke
+  tests, and local or hosted model backends.

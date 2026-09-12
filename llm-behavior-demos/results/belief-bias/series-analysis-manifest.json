@@ -1,0 +1,39 @@
+{
+  "confidence_interval": "Wilson 95% interval over valid trials; descriptive because repetitions and temperatures reuse items",
+  "excluded_source_rows": [
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    250,
+    251,
+    252
+  ],
+  "exclusion_reason": "three-premise items excluded because the accompanying published prompt formatter omits the third premise, which can change the correct logical classification",
+  "output_sha256": {
+    "accuracy-by-temperature.svg": "28cefee06ce66dd816f02e40a38af7ef02bc4f95a36ed438b6946d2246db8320",
+    "stability-by-temperature.svg": "fdd3fdb07b7b6d48f124e3078dbc1bd152f57a40002e5ce5a0bcf97db6dbb8ac",
+    "temperature-content-summary.csv": "c1ec951d783b09f23349c511cce58edc30faefd0927f0c9bccb798db655ac168",
+    "temperature-overall-summary.csv": "6ed5bf7102b3084d488f7d8eb3cb8e700ab5334ae83b5e680a4a9d77cf124e8f"
+  },
+  "parsers": [
+    "published",
+    "strict"
+  ],
+  "schema_version": 2,
+  "temperatures": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ]
+}

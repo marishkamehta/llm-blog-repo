@@ -1,0 +1,43 @@
+schema_version: 2
+audit_date: "2026-08-16"
+
+demonstration_source:
+  title: "Evaluating Large Language Models with NeuBAROCO: Syllogistic Reasoning Ability and Human-like Biases"
+  paper_url: "https://aclanthology.org/2023.naloma-1.1/"
+  followup_title: "Exploring Reasoning Biases in Large Language Models Through Syllogism: Insights from the NeuBAROCO Dataset"
+  followup_url: "https://aclanthology.org/2024.findings-acl.950/"
+
+official_release:
+  repository: "https://github.com/kmineshima/NeuBAROCO"
+  commit: "447929fdabe07bc3d13efae8e0c527fd458df177"
+  file: "acl2024/NeuBAROCO_NALOMA.tsv"
+  file_sha256: "b3f98f4a8f5f36079b9335c460fcea3b1044884dbb6f0ec627aa1b2b596666a5"
+  license: "CC BY 4.0"
+  records: 375
+
+analysis_set:
+  status: "collected and analyzed"
+  seed: 20260816
+  source_item_count: 375
+  analyzed_item_count: 366
+  repetitions: 3
+  temperatures: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  analyzed_response_count: 12078
+  selection_uses_new_model_outcomes: false
+  excluded_source_rows:
+    234: "three-premise item excluded because the published formatter omits its third premise"
+    235: "three-premise item excluded because the published formatter omits its third premise"
+    236: "three-premise item excluded because the published formatter omits its third premise"
+    237: "three-premise item excluded because the published formatter omits its third premise"
+    238: "three-premise item excluded because the published formatter omits its third premise"
+    239: "three-premise item excluded because the published formatter omits its third premise"
+    250: "three-premise item excluded because the published formatter omits its third premise"
+    251: "three-premise item excluded because the published formatter omits its third premise"
+    252: "three-premise item excluded because the published formatter omits its third premise"
+
+deviations_from_source_experiment:
+  - "Reports 366 two-premise records rather than all 375 records in the NALOMA file."
+  - "Excludes nine three-premise records because the published formatter omits their third premise."
+  - "Collects three independent responses per item rather than one."
+  - "Uses Qwen-3B through the local pipeline rather than the source model set."
+  - "Adds a strict whole-response parser as a sensitivity analysis."

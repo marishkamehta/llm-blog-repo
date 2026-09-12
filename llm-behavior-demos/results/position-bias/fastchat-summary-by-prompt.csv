@@ -1,0 +1,3 @@
+prompt_condition,scheduled_trials,collected_trials,valid_trials,invalid_or_missing_trials,invalid_or_missing_rate,mean_repetition_stability_valid,mean_repetition_stability_all_scheduled,position_pairs,evaluable_position_pairs,position_consistent_pairs,position_consistency,primacy_inconsistent_pairs,recency_inconsistent_pairs
+original,216,216,216,0,0.0,0.9722222222222222,0.9722222222222222,36,36,24,0.6666666666666666,6,6
+warning_ablation,216,216,216,0,0.0,0.9768518518518517,0.9768518518518517,36,36,25,0.6944444444444444,5,6

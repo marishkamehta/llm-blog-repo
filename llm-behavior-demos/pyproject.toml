@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-behavior-demos"
+version = "0.1.0"
+description = "Worked behavioral demonstrations for the LLM Behavioral Pipeline."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Don K. Dennis" },
+  { name = "Marishka M. Mehta" },
+]
+dependencies = ["filelock>=3.13,<4", "llm-behavior-pipeline>=0.1,<0.2"]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.12,<0.13"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["position_bias_demo*", "belief_bias_demo*"]
+
+[tool.setuptools]
+py-modules = ["demo_records"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

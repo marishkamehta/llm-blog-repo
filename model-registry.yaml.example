@@ -1,0 +1,18 @@
+# Copy to model-registry.yaml. That file is ignored by git.
+# Use exact model/deployment names from the backend you actually run.
+
+ollama-local:
+  backend: ollama
+  base_url: http://localhost:11434/v1
+  served_name: REPLACE_WITH_OLLAMA_MODEL_NAME
+
+vllm-local:
+  backend: vllm
+  base_url: http://localhost:8000/v1
+  served_name: Qwen/Qwen2.5-3B-Instruct
+
+azure-hosted:
+  backend: azure
+  base_url: https://REPLACE_RESOURCE.openai.azure.com/openai/v1
+  served_name: REPLACE_WITH_DEPLOYMENT_NAME
+  key_env: AZURE_OPENAI_API_KEY

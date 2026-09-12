@@ -4,7 +4,9 @@ Code, worked demonstrations, source audits, and reviewed results accompanying
 *Studying LLM Behavior: A Practical Guide for Behavioral Researchers* by
 Don K. Dennis and Marishka M. Mehta.
 
-The blog pages are published separately. This repository collects their
+Read the [blog series](https://marishkamehta.github.io/blog/2026/controlled-experiments/)
+and find this companion at [marishkamehta/llm-blog-repo](https://github.com/marishkamehta/llm-blog-repo).
+This repository collects the articles'
 supporting code and research artifacts in one checkout. The
 pipeline and demonstrations remain separate Python packages. The examples
 demonstrate controlled procedures; they are not replication studies.
@@ -67,23 +69,20 @@ reproducibility/        Study record templates
 docker/                 Optional vLLM setup
 llm-behavior-demos/      Two demonstrations, material audits, reviewed outputs
 examples/               Trajectory example and introductory decoy experiment
-docs/                   Reading map, provenance, validation and publication notes
+docs/                   Blog-to-code guide and pipeline setup
 requirements.txt        Installs both local packages and the existing test suite
 ```
 
-Only selected public-facing materials are included. Working raw responses,
-local model registries, credentials, editorial notes, and unpublished research
-plans are excluded. MT-Bench candidate answers must be retrieved upstream;
+Raw model responses are not bundled. MT-Bench candidate answers must be retrieved upstream;
 their redistribution terms are not clear. NeuBAROCO attribution and its
 CC BY 4.0 terms are recorded in the material audit. Aggregate outputs and their
-original checksum manifests are preserved. Raw runs are not bundled, so this
-checkout cannot regenerate every published aggregate without collecting or
+original checksum manifests are included. Recreating the published aggregates requires collecting or
 obtaining the underlying responses.
 
-## Attribution and publication
+## License and citation
 
 The pipeline and demonstration code retain their existing MIT licenses:
 [pipeline license](LICENSE) and
 [demonstration license](llm-behavior-demos/LICENSE). Upstream research materials
-retain their own terms. See [publication notes](docs/PUBLISHING.md) before release and
-[provenance](docs/PROVENANCE.md) for the source inventory and adaptations.
+retain their own terms; see the [material source audits](llm-behavior-demos/materials/README.md).
+Citation metadata for the pipeline is in [CITATION.cff](CITATION.cff).

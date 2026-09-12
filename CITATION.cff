@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this pipeline, please cite the software release."
 title: "LLM Behavioral Pipeline Template"
 type: software
+repository-code: "https://github.com/marishkamehta/llm-blog-repo"
+url: "https://marishkamehta.github.io/blog/2026/controlled-experiments/"
 authors:
   - family-names: "Dennis"
     given-names: "Don K."

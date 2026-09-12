@@ -18,6 +18,10 @@ dependencies = ["filelock>=3.13,<4", "llm-behavior-pipeline>=0.1,<0.2"]
 [project.optional-dependencies]
 dev = ["ruff>=0.12,<0.13"]
 
+[project.urls]
+Repository = "https://github.com/marishkamehta/llm-blog-repo"
+Documentation = "https://marishkamehta.github.io/blog/2026/controlled-experiments/"
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["position_bias_demo*", "belief_bias_demo*"]

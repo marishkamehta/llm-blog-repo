@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 
-from llm_behavior_pipeline import make_llm
+from silico import make_llm
 
 
 def main() -> int:

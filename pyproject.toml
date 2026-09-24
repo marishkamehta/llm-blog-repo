@@ -3,20 +3,21 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llm-behavior-pipeline"
+name = "silico"
 version = "0.1.0"
-description = "A backend-neutral pipeline template for LLM behavioral studies."
+description = "A small backend-neutral LLM client for behavioral experiments."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = { text = "CC-BY-NC-4.0" }
 dependencies = ["requests>=2.31", "pyyaml>=6"]
 
 [project.optional-dependencies]
 test = ["pytest>=8"]
 
 [project.urls]
-Repository = "https://github.com/marishkamehta/llm-blog-repo"
+Repository = "https://github.com/marishkamehta/silico"
 Documentation = "https://marishkamehta.github.io/blog/2026/controlled-experiments/"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["silico*"]

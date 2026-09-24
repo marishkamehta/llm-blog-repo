@@ -13,7 +13,7 @@ Where the models come from:
     is ignored by git, so your endpoints and choices stay yours and are never
     committed. The file is found in this order:
       1. the path in the SILICO_MODELS environment variable, if set, otherwise
-      2. model-registry.yaml at the repo root, if it exists.
+      2. model-registry.yaml in the current working directory, if it exists.
     If neither is present, only the built-in mock is available. Copy the
     template model-registry.yaml.example to model-registry.yaml and edit it.
 
@@ -83,13 +83,13 @@ def _config_path() -> pathlib.Path | None:
     """The models YAML file to load, or None if there is not one.
 
     Prefers the SILICO_MODELS environment variable, then the default location
-    model-registry.yaml at the repo root. Returns None when neither is set or
-    present.
+    model-registry.yaml in the current working directory. Returns None when
+    neither is set or present.
     """
     env = os.environ.get("SILICO_MODELS")
     if env:
         return pathlib.Path(env).expanduser()
-    default = pathlib.Path(__file__).resolve().parents[1] / "model-registry.yaml"
+    default = pathlib.Path.cwd() / "model-registry.yaml"
     return default if default.exists() else None
 
 

@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this pipeline, please cite the software release."
-title: "LLM Behavioral Pipeline Template"
+message: "If you use Silico, please cite the software release."
+title: "Silico"
 type: software
-repository-code: "https://github.com/marishkamehta/llm-blog-repo"
+repository-code: "https://github.com/marishkamehta/silico"
 url: "https://marishkamehta.github.io/blog/2026/controlled-experiments/"
 authors:
   - family-names: "Dennis"
@@ -11,8 +11,8 @@ authors:
     given-names: "Marishka M."
     orcid: "https://orcid.org/0000-0001-5105-6723"
 version: 0.1.0
-license: MIT
+license: CC-BY-NC-4.0
 abstract: >-
-  A backend-neutral template for running language models as participants in
+  A small backend-neutral client for running language models as agents in
   behavioral experiments, with model registration, metadata capture, smoke
   tests, and local or hosted model backends.

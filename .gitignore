@@ -13,15 +13,4 @@ dist/
 .env
 .env.*
 model-registry.yaml
-INPUT/
-SOURCE/
-OUTPUT/
-PILOT-SCHEDULE/
-RUN/
-ANALYSIS/
 raw-responses/
-
-# Introductory example output
-decoy_results.csv
-outputs/*
-!outputs/.gitkeep
